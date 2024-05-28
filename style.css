@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins:wght@200&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-image: url(./slike/poz.png);
+  background-repeat: no-repeat center fixed;
+  background-size: cover;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.meni ul,
+.meni li {
+  position: fixed;
+  top: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+/*ovo je pozadina menija*/
+.meni ul {
+  background: #101014;
+  list-style: none;
+  width: 80%;
+  z-index: 5;
+}
+
+.meni li {
+  float: left;
+  position: relative;
+  width: auto;
+}
+
+.meni a {
+  background: #101014;
+  padding: 15px 55px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.meni li:hover a {
+  background: #2b2b33;
+}
+
+#padajuci {
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 35px;
+  visibility: hidden;
+  z-index: 5;
+}
+
+li:hover ul#padajuci {
+  opacity: 1;
+  top: 55px;
+  visibility: visible;
+}
+
+#padajuci li {
+  float: none;
+  width: 100%;
+}
+
+#padajuci a:hover {
+  background: #2b2b33;
+}
+
+
+#padajuci a {
+  background-color: #101014;
+}
+
+/*logo*/
+
+.LogoSlika {
+  width: 60px;
+}
+
+.Logo img:hover {
+  background-color: #2b2b33;
+}
+
+.Logo01 {
+  display: block;
+  color: white;
+  padding-top: 4px;
+  text-decoration: none;
+}
+
+.element {
+  font-family: Poppins;
+  font-weight: bold;
+  color: rgb(206, 206, 206);
+  display: block;
+  padding: 22px 26px;
+  text-align: center;
+}
+
+
+.zaglavlje {
+  margin-top: 35px;
+  width: 100%;
+  height: 416px;
+  line-height: 800px;
+  background-image: url(./slike/banner.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position:center;
+  text-align:right;
+}
+
+
+/*Sadrzaj*/
+
+/*pozadina cela*/
+.Sadrzaj {
+  width: auto;
+  margin-top: 10px;
+  padding: 30px;
+  background-color: rgba(33, 33, 34, 0.738);
+  text-align: center;
+}
+
+
+/*naslovi*/
+.Sadrzaj h1 {
+  font-family: Audiowide;
+  color: #858585;
+  margin: auto;
+}
+
+.Sadrzaj h2 {
+  font-family: Audiowide;
+  color: #858585;
+  text-align: left;
+}
+
+.Sadrzaj h3 {
+  font-family: Poppins;
+  color: rgb(206, 206, 206);
+  margin: auto;
+  padding: 20px;
+}
+
+/*tekst*/
+.Sadrzaj p {
+  font-family: Poppins;
+  color: rgb(206, 206, 206);
+  display: block;
+  background-color: rgba(65, 65, 65, 0.791);
+  padding: 20px;
+  text-align: justify;
+}
+
+
+dd {
+  display: list-item;
+  list-style-type: "✶";
+  padding-inline-start: 1ch;
+}
+
+.listan {
+  list-style-type: ✶;
+  font-family: Poppins;
+  color: rgb(206, 206, 206);
+  display: block;
+  background-color: rgba(65, 65, 65, 0.791);
+  padding: 20px;
+  text-align: justify;
+}
+
+
+
+.oclanicama {
+  width: auto;
+  margin-top: 10px;
+  padding: 30px;
+  background-color: rgba(33, 33, 34, 0.738);
+  text-align: center;
+}
+
+.oclanicama p {
+  font-family: Poppins;
+  color: rgb(206, 206, 206);
+  display: block;
+  background-color: rgba(65, 65, 65, 0.791);
+  padding: 20px;
+}
+
+.oclanicama h1 {
+  font-family: Audiowide;
+  color: #858585;
+  margin: auto;
+}
+
+
+.vslika {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.slike {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+.clanicesl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.galerija {
+  display: block;
+  margin: 10px;
+  width: "30%";
+}
+
+.galerija img {
+  width: 100%;
+  height: 450px; 
+}
+
+.galerijasl:hover {
+  transform: scale(1.1);
+  transition: all 0.25s ease;
+}
+
+.opis {
+  font-family: Poppins;
+  color: rgb(206, 206, 206);
+  display: block;
+  background-color: rgba(65, 65, 65, 0.791);
+  padding: 20px;
+}
+
+
+.diskografija {
+  width: auto;
+  margin-top: 10px;
+  padding: 30px;
+  background-color: rgba(33, 33, 34, 0.738);
+  text-align: left;
+}
+
+.diskografijapoz {
+  background-color: rgba(65, 65, 65, 0.791);
+  padding: 20px;
+}
+/*naslovi*/
+.diskografija h1 {
+  font-family: Audiowide;
+  color: #858585;
+  margin: auto;
+  text-align: center;
+}
+
+
+/*tekst*/
+.diskografija p {
+  font-family: Poppins;
+  color: rgb(206, 206, 206);
+  display: block;
+  text-align: justify;
+}
+
+.album {
+  display: inline-flex;
+  padding: 15px;
+}
+
+.albumslika {
+  width: 60%;
+  float: left;
+  margin-left: 35px;
+}
+
+.album p {
+  font-family: Poppins;
+  color: rgb(206, 206, 206);
+  display: block;
+  text-align: justify;
+}
+
+.textbox {
+  float: left;
+  margin-left: 35px;
+}
+
+.lista {
+  list-style-type: decimal;
+  font-family: Poppins;
+  color: rgb(206, 206, 206);
+  display: block;
+  padding: 10px;
+  text-align: justify;
+}
+
+.albumslika:hover {
+  transform: scale(1.1);
+  transition: all 0.25s ease;
+}
+
+/*footer*/
+
+.footer {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  background-color: rgba(37, 40, 45, 0.92);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position: relative;
+  bottom: 0px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: rgb(226, 223, 228);
+  font-family: Poppins;
+}
